@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+  color: #11a5a1;
+  background-color: #202020;
+  font-size: 20px;
+}
+
+body nav, body section {
+  width: 100%;
+}
+
+body nav {
+  width: 30%;
+  z-index: 2;
+  padding-left: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 0 20px 0 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0 10px 20px black;
+          box-shadow: 0 10px 20px black;
+  background: #141818;
+}
+
+body nav header {
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body nav header h1 {
+  font-size: 2rem;
+}
+
+body nav header #appIcon {
+  height: 60px;
+  width: 60px;
+}
+
+body nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+body nav ul li {
+  color: white;
+}
+
+body nav ul li:nth-child(2), body nav ul li:nth-child(4) {
+  border-bottom: dotted 5px #11a5a1;
+  padding-bottom: 2rem;
+}
+
+body nav i {
+  text-align: right;
+  padding: 2rem;
+}
+
+body section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body section .topSection {
+  height: 100%;
+  display: block;
+  text-align: right;
+  background-image: url("HealthApp/geert-pieters-3RnkZpDqsEI-unsplash.png");
+  padding: 1em;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body section .topSection svg {
+  margin-left: 2em;
+}
+
+body section .medSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 1em;
+  margin-top: -10p0px;
+  width: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: .5em;
+}
+
+body section .medSection img {
+  height: 150px;
+  width: 150px;
+}
+
+body section .medSection #name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+body section .medSection a {
+  color: #11a5a1;
+  background-color: #141818;
+  border-radius: 20px;
+  padding: .5em;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 15px;
+}
+
+body section .medSection .profileDetails {
+  background-color: #141818;
+  width: 50%;
+  padding: 1em;
+  line-height: 2em;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 2px 2px 5px black;
+          box-shadow: inset 2px 2px 5px black;
+}
+
+body section .medSection .profileDetails p:nth-child(2) {
+  display: inline;
+}
+
+body section .medSection .profileDetails p:nth-child(3), body section .medSection .profileDetails p:nth-child(4) {
+  border-bottom: 2px solid #b5aa44;
+}
+
+body section .bottomSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 1fr;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  height: auto;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem;
+}
+
+body section .bottomSection svg {
+  height: 20px;
+  width: 20px;
+}
+/*# sourceMappingURL=style.css.map */

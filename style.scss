@@ -1,0 +1,202 @@
+
+$primary-color: rgb(181,170,68);
+$partial-color: rgb(17,165,161);
+$backgroundColor: rgb(20, 24, 24);
+$themeColor: rgb(32,32,32);
+$text-color: rgb(255,255,255);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    // width: 100vw;
+    // gap: 5;
+    justify-content: space-between;
+    // border: 2px solid $primary-color;
+    height: 100vh;
+    color: $partial-color;
+    background-color: $themeColor;
+    font-size: 20px;
+
+
+nav , section{
+    width: 100%;
+    // border: 2px solid $primary-color;
+
+}
+
+    nav{
+
+        width: 30%;
+        z-index:2 ;
+        padding-left: 2em;
+        display: flex;
+        border-radius:0 20px 0 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 10px 20px black;
+        background: $backgroundColor;
+
+        header{
+            height: 20%;
+            // border: 1px dotted $primary-color;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+      
+            h1{
+                font-size:2rem;
+                // display: inline;
+    
+            }
+
+            #appIcon{
+                height:60px;
+                width: 60px;
+            }
+        }
+
+      
+ 
+
+        ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+
+            li{
+                color: white;
+
+            }
+
+            li:nth-child(2), li:nth-child(4){
+                border-bottom: dotted 5px $partial-color;
+                padding-bottom: 2rem;
+
+            }
+        }
+
+        i{
+            text-align: right;
+            padding: 2rem;
+        }
+
+
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // border: 2px dotted $primary-color;
+        // justify-content: space;
+
+
+        .topSection{
+            // border: $primary-color;
+            // background-color:$text-color ;
+            height: 100%;
+            display: block;
+            text-align: right;
+            background-image: url('HealthApp/geert-pieters-3RnkZpDqsEI-unsplash.png');
+            padding: 1em;
+            // background-position: inherit;
+            background-repeat: no-repeat;
+            background-size: cover;
+            // margin-left: -20px;
+            // margin-bottom: 5em;
+            
+            svg{
+                margin-left: 2em;
+            }
+        }
+
+        .medSection{
+        display: flex;
+        flex-direction: column;
+        padding-left:1em ;
+        margin-top: -10p0px;
+        width: auto;
+        // align-items: ;
+        justify-content: space-between;
+        // height: 20%;
+        gap: .5em;
+            // background: $primary-color;
+
+
+            img{
+                height: 150px;
+                width: 150px;
+
+            }
+
+             #name{
+                font-size: 30px;
+                font-weight: bold;
+                margin-left: 1em;
+            }
+
+            a{
+               color: $partial-color;
+               background-color: $backgroundColor;
+               border-radius: 20px;
+               padding: .5em;
+               width: max-content;
+               font-size: 15px; 
+            }
+
+            .profileDetails{
+                background-color: $backgroundColor;
+                width: 50%;
+                padding: 1em;
+                line-height: 2em;
+                border-radius: 10px;
+                box-shadow: inset 2px 2px 5px black;
+
+              p:nth-child(2){
+                  display: inline;
+                //   padding: 1em;
+                  
+              }
+
+              p:nth-child(3), p:nth-child(4) {
+                border-bottom: 2px solid $primary-color;
+                
+            }
+            
+        
+            }
+        }
+
+        .bottomSection{
+        //   border: $primary-color 5px dotted;
+          display: flex;
+        height: 1fr;
+         flex-direction: column;
+          gap: 20px;
+            height: auto;
+
+            align-items: flex-end;
+            padding: 1rem;
+            // display: block;
+            svg{
+                height: 20px;
+                width: 20px;
+            }
+        }
+
+    }
+
+
+    
+}
+
